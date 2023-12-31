@@ -48,7 +48,7 @@ const socialMedia = [
 
 const Footer = () => {
     return (
-        <div className='bg-[#3C4242] px-4 md:px-10 lg:px-28 py-8 md:pt-14 pb-5'>
+        <div className='bg-blackGray px-4 md:px-10 lg:px-28 py-8 md:pt-14 pb-5'>
             <div className='flex flex-col justify-between md:flex-row gap-8 md:gap-16 mb-10'>
                 <div className='mb-8 md:mb-0'>
                     <h1 className='text-white mb-4 font-bold text-lg md:text-2xl'>Need Help</h1>

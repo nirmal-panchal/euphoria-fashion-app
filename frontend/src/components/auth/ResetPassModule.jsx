@@ -21,15 +21,15 @@ const ForgetPassModule = () => {
         <p className='pb-8 text-[#676B80] text-sm max-w-[460px]'>Your new password must be different from previous used passwords.</p>
         <form onSubmit={submitHandler}>
           <div className='flex flex-col pb-7'>
-            <label className='pb-2 text-[#3C4242]'>Password</label>
-            <input type="password" className="border focus:border-[#8A33FD] outline-none hover:border-[#8A33FD] border-[#3C4242] text-[#8A33FD] rounded-lg py-4 px-5" onChange={submitHandler} />
+            <label className='pb-2 text-blackGray'>Password</label>
+            <input type="password" className="border focus:border-brightPurple outline-none hover:border-brightPurple border-blackGray text-brightPurple rounded-lg py-4 px-5" onChange={submitHandler} />
           </div>
           <div className='flex flex-col pb-7'>
-            <label className='pb-2 text-[#3C4242]'>Confirm Password</label>
-            <input type="password" className="border focus:border-[#8A33FD] outline-none hover:border-[#8A33FD] border-[#3C4242] text-[#8A33FD] rounded-lg py-4 px-5" onChange={submitHandler} />
+            <label className='pb-2 text-blackGray'>Confirm Password</label>
+            <input type="password" className="border focus:border-brightPurple outline-none hover:border-brightPurple border-blackGray text-brightPurple rounded-lg py-4 px-5" onChange={submitHandler} />
           </div>
-          <button className='py-4 px-14 bg-[#8A33FD] text-white font-medium rounded-lg mb-2'>Reset Password</button>
-          < div className='text-sm text-[#3C4242]'> 
+          <button className='py-4 px-14 bg-brightPurple text-white font-medium rounded-lg mb-2'>Reset Password</button>
+          < div className='text-sm text-blackGray'> 
             <Link href="/auth/login" className='underline'>Back to login</Link>
           </div>
         </form>
