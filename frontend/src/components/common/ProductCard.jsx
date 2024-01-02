@@ -2,12 +2,18 @@ import React from 'react'
 import ImageComponent from './ImageComponent'
 import { IoIosArrowRoundForward, IoMdHeartEmpty } from 'react-icons/io'
 
-const ProductCard = ({ imageProps, title, subTitle, price, showWishListIcon }) => {
+const ProductCard = ({ imageUrl, imageContainerClass, layout, objectFit, imageClass, imageStyle, title, subTitle, price, showWishListIcon, shape }) => {
     return (
         <div className='max-w-fit'>
-            <div className={`${imageProps?.imageStyle?.className}`}>
-                <ImageComponent {...imageProps} />
-                {showWishListIcon && <div className='absolute top-6 left-[220px] bg-[#FFFFFF] text-blackGray rounded-full p-2'>
+            <div className={`${imageContainerClass}`}>
+                <ImageComponent
+                    imageUrl={imageUrl}
+                    layout={layout}
+                    objectFit={objectFit}
+                    imageStyle={imageStyle}
+                    imageClass={shape}
+                />
+                {showWishListIcon && <div className="absolute top-6 left-[220px] bg-[#FFFFFF] text-blackGray rounded-full p-2">
                     <IoMdHeartEmpty />
                 </div>}
             </div>
