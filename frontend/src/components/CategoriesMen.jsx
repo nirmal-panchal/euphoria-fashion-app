@@ -2,11 +2,12 @@ import React from 'react'
 import { categoryMen } from '@/constants/Categorydata'
 import ProductCard from './common/ProductCard'
 import { customStyles } from '@/styles/style'
+import CustomTitle from './common/CustomTitle'
 
 const CategoriesMen = () => {
     return (
         <div className='px-8 md:px-20 mb-20'>
-            <h1 className='font-semibold text-3xl border-l-[6px] px-5 border-purple-600 mb-14'>Categories For Men</h1>
+            <CustomTitle value={"Categories For Men"} />
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 justify-items-center'>
                 {categoryMen?.map((item) => (
                     <ProductCard

@@ -2,13 +2,13 @@ import React from 'react'
 import FeedbackCard from './cards/FeedbackCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import Image from 'next/image';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import CustomTitle from './common/CustomTitle';
 
 const feedabackData = [
     {
@@ -43,7 +43,7 @@ const feedabackData = [
 const Feedback = () => {
     return (
         <div className='px-8 md:px-20 mb-20'>
-            <h1 className='font-semibold text-3xl border-l-[6px] px-5 border-purple-600 mb-14'>Feedback</h1>
+            <CustomTitle value={"Feedback"}/>
             <FeedbackSlider />
         </div>
     )

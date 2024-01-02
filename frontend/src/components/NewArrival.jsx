@@ -8,11 +8,12 @@ import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper/modu
 import SwiperCore from 'swiper';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import CustomTitle from './common/CustomTitle';
 
 const NewArrival = () => {
     return (
         <div className='px-8 md:px-20 mb-20'>
-            <h1 className='font-semibold text-3xl border-l-[6px] px-5 border-purple-600 mb-16'>New Arrival</h1>
+            <CustomTitle value={"New Arrival"}/>
             <NewArrivalSlider />
         </div>
     )
