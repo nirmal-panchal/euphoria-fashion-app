@@ -65,3 +65,9 @@ export const categoryWomen = [
         subTitle: "Explore now!"
     },
 ]
+
+export const womenCategoryFilters = [
+    "Tops", "Printed T-shirts", "Plain T-shirts",
+    "Kurti", "Boxers", "Full sleeve T-shirts", "Joggers",
+    "Payjamas", "Jeans"
+]

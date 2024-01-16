@@ -1,9 +1,10 @@
+import Filters from '@/components/common/Filters'
 import React from 'react'
 
 const women = () => {
   return (
-    <div>
-        
+    <div className='px-24'>
+        <Filters/>
     </div>
   )
 }
